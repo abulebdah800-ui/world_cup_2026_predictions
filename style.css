@@ -328,10 +328,6 @@ button:disabled {
 }
 @media (max-width: 768px) {
     body {
-        background-image: url("ro.jpeg");
-        background-size: 50% auto;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-color: red;
-    }
+    background: red !important;
+}
 }
