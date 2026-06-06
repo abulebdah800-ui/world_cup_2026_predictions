@@ -281,3 +281,78 @@ button:disabled {
 .leaderboard-btn:hover {
     opacity: 0.9;
 }
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .match-row {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .team-right,
+    .team-left {
+        width: auto;
+        justify-content: center;
+        font-size: 18px;
+    }
+
+    .team-flag {
+        width: 28px;
+        height: 20px;
+    }
+
+    .prediction-center {
+        gap: 8px;
+    }
+
+    .score-input {
+        width: 55px;
+        height: 55px;
+        font-size: 18px;
+    }
+
+    .match-date {
+        font-size: 15px;
+        padding: 6px 12px;
+    }
+
+    .buttons-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .buttons-row a {
+        width: 100%;
+    }
+
+    button,
+    .leaderboard-btn,
+    .admin-btn {
+        font-size: 16px;
+    }
+
+    #countdownBox {
+        font-size: 18px;
+    }
+
+    #closeTimeText {
+        font-size: 16px;
+    }
+
+}
