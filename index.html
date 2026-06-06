@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحدي كأس العالم 2026</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="logo-container">
+    <img src="worldcup-logo.png" class="logo" alt="World Cup 2026">
+    <h1>تحدي كأس العالم 2026</h1>
+</div>
+
+<p id="closeTimeText"></p>
+<p id="countdownBox"></p>
+   
+
+        <h2>اختر اسمك</h2>
+     
+
+        <select id="player">
+            <option>حمزة</option>
+            <option>أسامة</option>
+            <option>حذيفة</option>
+            <option>يوسف</option>
+            <option>بهاء</option>
+            <option>عزم</option>
+        </select>
+
+        <div id="matchesContainer"></div>
+
+       <button id="saveBtn">حفظ التوقع</button>
+
+<div class="buttons-row">
+
+    <a href="leaderboard.html" class="leaderboard-btn">
+        🏆 مشاهدة الترتيب
+    </a>
+
+    <a href="admin.html" class="admin-btn">
+        🔐 لوحة الأدمن
+    </a>
+
+    <a href="sos.html" class="admin-btn">
+    ⚙️ SOS
+</a>
+
+</div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

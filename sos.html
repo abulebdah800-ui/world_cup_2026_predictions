@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOS Control Panel</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>⚙️ SOS Control Panel</h1>
+
+        <div class="match">
+
+    <h2
+        onclick="toggleSection('settingsBox')"
+        style="cursor:pointer"
+    >
+        ⚙️ الإعدادات ▼
+    </h2>
+
+    <div
+    id="settingsBox"
+    style="display:none;"
+>
+
+        <h2>الجولة الحالية</h2>
+
+        <input
+            type="number"
+            id="currentRound"
+            min="1"
+        >
+
+        <h2>فتح التوقعات</h2>
+
+        <input
+            type="number"
+            id="openHour"
+            min="0"
+            max="23"
+        >
+
+        <h2>إغلاق التوقعات</h2>
+
+        <input
+            type="number"
+            id="closeHour"
+            min="0"
+            max="23"
+        >
+
+        <button id="saveSettingsBtn">
+            حفظ الإعدادات
+        </button>
+
+         </div>
+</div>
+    
+<h2>⚽ نتائج المباريات</h2>
+
+<div id="matchesResults"></div>
+
+<div class="match">
+
+    <h2
+        onclick="toggleSection('manageMatchesSection')"
+        style="cursor:pointer"
+    >
+        ➕ إدارة المباريات ▼
+    </h2>
+
+    <div
+        id="manageMatchesSection"
+        style="display:none;"
+    >
+
+        <h3>الفريق الأول</h3>
+        <input
+            type="text"
+            id="newHomeTeam"
+        >
+
+        <h3>الفريق الثاني</h3>
+        <input
+            type="text"
+            id="newAwayTeam"
+        >
+
+        <h3>الجولة</h3>
+        <input
+            type="number"
+            id="newRound"
+        >
+
+        <h3>وقت المباراة</h3>
+        <input
+            type="text"
+            id="newMatchDate"
+            placeholder="21:00"
+        >
+
+        <button id="addMatchBtn">
+            ➕ إضافة مباراة
+        </button>
+
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+    </div>
+
+    <script src="sos.js"></script>
+
+</body>
+
+</html>
