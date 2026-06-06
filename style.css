@@ -326,3 +326,14 @@ button:disabled {
     }
 
 }
+@media (max-width: 768px) {
+
+    body {
+        background-image: url("pedri.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+
+}
