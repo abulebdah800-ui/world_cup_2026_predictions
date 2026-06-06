@@ -281,78 +281,48 @@ button:disabled {
 .leaderboard-btn:hover {
     opacity: 0.9;
 }
-
 @media (max-width: 768px) {
 
-    body {
-        padding: 10px;
+    body{
+        padding:10px;
     }
 
-    .container {
-        padding: 15px;
-    }
-
-    h1 {
-        font-size: 24px;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-
-    .match-row {
-        flex-direction: column;
-        gap: 12px;
+    .container{
+        width:95%;
+        padding:15px;
     }
 
     .team-right,
-    .team-left {
-        width: auto;
-        justify-content: center;
-        font-size: 18px;
+    .team-left{
+        width:90px;
+        font-size:16px;
     }
 
-    .team-flag {
-        width: 28px;
-        height: 20px;
+    .team-flag{
+        width:24px;
+        height:18px;
     }
 
-    .prediction-center {
-        gap: 8px;
+    .score-input{
+        width:50px;
+        height:50px;
+        font-size:18px;
     }
 
-    .score-input {
-        width: 55px;
-        height: 55px;
-        font-size: 18px;
+    .prediction-center{
+        gap:6px;
     }
 
-    .match-date {
-        font-size: 15px;
-        padding: 6px 12px;
+    .match-row{
+        gap:8px;
     }
 
-    .buttons-row {
-        flex-direction: column;
-        gap: 10px;
+    .match-date{
+        font-size:14px;
     }
 
-    .buttons-row a {
-        width: 100%;
-    }
-
-    button,
-    .leaderboard-btn,
-    .admin-btn {
-        font-size: 16px;
-    }
-
-    #countdownBox {
-        font-size: 18px;
-    }
-
-    #closeTimeText {
-        font-size: 16px;
+    h1{
+        font-size:28px;
     }
 
 }
