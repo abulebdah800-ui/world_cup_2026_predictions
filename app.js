@@ -38,6 +38,8 @@ async function loadSettings() {
     openHour = settings.open_hour;
     closeHour = settings.close_hour;
     currentRound = settings.current_round;
+    document.getElementById("roundBanner").innerHTML =
+`🌍 اليوم ${currentRound} من كأس العالم 2026`;
     document.getElementById("closeTimeText").innerHTML =
 `⏰ تغلق التوقعات عند الساعة ${closeHour}:00`;
 
@@ -62,7 +64,63 @@ const flags = {
     "هولندا": "nl",
     "البرتغال": "pt",
     "الاوروجواي": "uy",
-    "المكسيك": "mx"
+    "المكسيك": "mx",
+
+    "انجلترا": "gb",
+    "بلجيكا": "be",
+    "ايطاليا": "it",
+    "كرواتيا": "hr",
+    "الدنمارك": "dk",
+    "سويسرا": "ch",
+    "صربيا": "rs",
+    "بولندا": "pl",
+    "السويد": "se",
+    "النرويج": "no",
+    "اوكرانيا": "ua",
+    "تركيا": "tr",
+    "اليونان": "gr",
+    "التشيك": "cz",
+    "المجر": "hu",
+    "النمسا": "at",
+    "اسكتلندا": "gb-sct",
+    "ويلز": "gb-wls",
+
+    "المغرب": "ma",
+    "الجزائر": "dz",
+    "تونس": "tn",
+    "مصر": "eg",
+    "السنغال": "sn",
+    "نيجيريا": "ng",
+    "غانا": "gh",
+    "الكاميرون": "cm",
+    "ساحل العاج": "ci",
+    "جنوب افريقيا": "za",
+
+    "الولايات المتحدة": "us",
+    "كندا": "ca",
+    "كوستاريكا": "cr",
+    "بنما": "pa",
+    "جامايكا": "jm",
+    "هندوراس": "hn",
+
+    "اليابان": "jp",
+    "كوريا الجنوبية": "kr",
+    "استراليا": "au",
+    "ايران": "ir",
+    "السعودية": "sa",
+    "قطر": "qa",
+    "العراق": "iq",
+    "الاردن": "jo",
+    "الامارات": "ae",
+    "اوزبكستان": "uz",
+
+    "كولومبيا": "co",
+    "تشيلي": "cl",
+    "بيرو": "pe",
+    "الاكوادور": "ec",
+    "فنزويلا": "ve",
+    "باراغواي": "py",
+    "بوليفيا": "bo"
 };
 
     const { data, error } = await supabaseClient
@@ -96,8 +154,14 @@ document.getElementById("saveBtn").disabled = false;
 
     data.forEach(match => {
 
-        container.innerHTML += `
-    <div class="match">
+         container.innerHTML += `
+<div class="match"
+style="
+--home-flag:url('https://flagcdn.com/w320/${flags[match.home_team]}.png');
+--away-flag:url('https://flagcdn.com/w320/${flags[match.away_team]}.png');
+">
+
+
 
         <div class="match-row">
 
@@ -111,12 +175,14 @@ document.getElementById("saveBtn").disabled = false;
     <div class="prediction-center">
 
         <input class="score-input"
-        type="number" min="0" value="0">
+        type="number" min="0" value=""
+placeholder="-">
 
-        <span class="vs-input">×</span>
+        <img src="worldcup-logo.png" class="vs-logo">
 
         <input class="score-input"
-        type="number" min="0" value="0">
+        type="number" min="0" value=""
+placeholder="-">
 
     </div>
 
@@ -202,7 +268,19 @@ const { data, error } = await supabaseClient
         console.log("ERROR:", error);
         alert("فشل الحفظ");
     } else {
-        alert("تم حفظ التوقع بنجاح");
+        const msg =
+document.getElementById("successMessage");
+
+msg.innerHTML =
+"✅ تم حفظ التوقع بنجاح";
+
+msg.style.display = "block";
+
+setTimeout(() => {
+
+    msg.style.display = "none";
+
+}, 3000);
         console.log(data);
     }
 
@@ -265,3 +343,4 @@ function startCountdown() {
 
     }, 1000);
 }
+
