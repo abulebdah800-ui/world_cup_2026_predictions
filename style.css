@@ -134,15 +134,7 @@ button:hover {
     padding-left: 12px;
 }
 
-.team-right,
-.team-left {
-    display:flex;
-    align-items:center;
-    gap:8px;
-    font-weight:bold;
 
-    flex:1;
-}
 
 .prediction-center{
     display:flex;
@@ -329,10 +321,11 @@ button:disabled {
     }
 
     .team-right,
-    .team-left{
-        width:140px;
-        font-size:14px;
-    }
+.team-left{
+    flex: 1;
+    min-width: 120px;
+    font-size: 14px;
+}
 
     .team-flag{
         width:24px;
@@ -350,7 +343,7 @@ button:disabled {
     }
 
     .match-row{
-        gap:8px;
+        gap:4px;
     }
 
     .match-date{
