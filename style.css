@@ -119,7 +119,9 @@ button:hover {
     align-items: center;
     gap: 8px;
     font-weight: bold;
-    width: 100px;
+
+    flex: 1;
+    min-width: 0;
 }
 
 .team-right {
@@ -130,10 +132,20 @@ button:hover {
     justify-content: flex-start;
 }
 
-.prediction-center {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.team-right span,
+.team-left span{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+.prediction-center{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:15px;
+
+    min-width:180px;
 }
 
 .team-flag {
