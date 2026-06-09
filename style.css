@@ -400,6 +400,14 @@ button:disabled {
     transform: translateX(15px);
 }
 
+.team-right,
+.team-left{
+    min-width: 70px;
+}
+
+.prediction-center{
+    min-width: 120px;
+}
 }
 @media (max-width: 768px) {
 
