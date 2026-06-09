@@ -416,7 +416,7 @@ button:disabled {
 
 .prediction-center{
     min-width: 120px;
-    transform: translateX(5px) !important;
+    transform: translateX(1px) !important;
 }
 .match-row{
     transform: translateX(-10px);
