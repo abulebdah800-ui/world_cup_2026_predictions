@@ -402,11 +402,11 @@ button:disabled {
 
 .team-right,
 .team-left{
-    min-width: 70px;
+    min-width: 65px;
 }
 
 .prediction-center{
-    min-width: 120px;
+    min-width: 110px;
 }
 }
 @media (max-width: 768px) {
