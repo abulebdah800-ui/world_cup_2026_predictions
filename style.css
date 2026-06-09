@@ -421,15 +421,15 @@ button:disabled {
     transform: translateX(-10px);
 }
 .team-right{
-    transform: translateX(-1px) !important;
+    transform: translateX(-1.5px) !important;
 }
 
 .team-left{
-    transform: translateX(-1px) !important;
+    transform: translateX(-1.5px) !important;
 }
 
 .prediction-center{
-    transform: translateX(-1xp) !important;
+    transform: translateX(-1.5xp) !important;
 }
 
 }
