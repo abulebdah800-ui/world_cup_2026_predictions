@@ -388,6 +388,18 @@ button:disabled {
     right: -12px;
 }
 
+.team-right{
+    transform: translateX(15px);
+}
+
+.prediction-center{
+    transform: translateX(15px);
+}
+
+.team-left{
+    transform: translateX(15px);
+}
+
 }
 @media (max-width: 768px) {
 
