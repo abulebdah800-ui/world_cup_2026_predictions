@@ -393,6 +393,12 @@ button:disabled {
 .match-row{
     transform: translateX(-5px);
 }
+
+.match-date{
+    display:block !important;
+    width:fit-content;
+    margin:12px auto 0 auto !important;
+}
 }
 @media (max-width: 768px) {
 
