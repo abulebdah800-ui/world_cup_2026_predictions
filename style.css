@@ -391,7 +391,7 @@ button:disabled {
 }
 
 .match-row{
-    transform: translateX(-18px);
+    transform: translateX(-12px);
 }
 }
 @media (max-width: 768px) {
