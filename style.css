@@ -389,15 +389,15 @@ button:disabled {
 }
 
 .team-right{
-    transform: translateX(-5px);
+    transform: translateX(15px);
 }
 
 .prediction-center{
-    transform: translateX(-5px);
+    transform: translateX(15px);
 }
 
 .team-left{
-    transform: translateX(-5px);
+    transform: translateX(15px);
 }
 
 .team-right,
@@ -420,7 +420,17 @@ button:disabled {
 .match-row{
     transform: translateX(-10px);
 }
+.team-right{
+    transform: translateX(-10px) !important;
+}
 
+.team-left{
+    transform: translateX(-10px) !important;
+}
+
+.prediction-center{
+    transform: translateX(-10px) !important;
+}
 
 }
 @media (max-width: 768px) {
