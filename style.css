@@ -381,6 +381,13 @@ button:disabled {
     height:15px !important;
 }
 
+.team-right,
+.team-left,
+.prediction-center{
+    position: relative;
+    right: -12px;
+}
+
 }
 @media (max-width: 768px) {
 
