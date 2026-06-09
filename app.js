@@ -125,6 +125,8 @@ const flags = {
     "فنزويلا": "ve",
     "باراغواي": "py",
     "بوليفيا": "bo"
+
+    "نيوزيلندا": "nz",
 };
 
     const { data, error } = await supabaseClient
