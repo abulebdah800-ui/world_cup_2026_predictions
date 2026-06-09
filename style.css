@@ -417,7 +417,9 @@ button:disabled {
 .prediction-center{
     min-width: 120px;
 }
-
+.match-row{
+    transform: translateX(-10px);
+}
 }
 @media (max-width: 768px) {
 
