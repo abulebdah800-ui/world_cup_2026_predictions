@@ -372,6 +372,15 @@ button:disabled {
     height:15px;
 }
 
+.team-name{
+    font-size:18px !important;
+}
+
+.team-flag{
+    width:20px !important;
+    height:15px !important;
+}
+
 }
 @media (max-width: 768px) {
 
