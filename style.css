@@ -389,15 +389,15 @@ button:disabled {
 }
 
 .team-right{
-    transform: translateX(1px);
+    transform: translateX(0px);
 }
 
 .prediction-center{
-    transform: translateX(1px);
+    transform: translateX(0px);
 }
 
 .team-left{
-    transform: translateX(1px);
+    transform: translateX(0px);
 }
 
 .team-right,
