@@ -117,8 +117,7 @@ button:hover {
 .team-left {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 8px;
+    gap: 5px;
     font-weight: bold;
 
     flex: 1;
@@ -127,7 +126,24 @@ button:hover {
 
 
 
+.team-right {
+    align-items: flex-end;
+    text-align: right;
+    padding-right: 30px;
+}
 
+.team-left {
+    align-items: flex-start;
+    text-align: left;
+    padding-left: 30px;
+}
+
+
+.team-right span,
+.team-left span{
+    font-size:20px;
+    font-weight:bold;
+}
 
 .prediction-center{
     display:flex;
@@ -536,4 +552,78 @@ transition:all 0.3s ease;
 
     box-shadow:
     0 4px 15px rgba(0,0,0,0.15);
+}
+
+.team-right,
+.team-left{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.team-right{
+    align-items:flex-end;
+    text-align:right;
+}
+
+.team-left{
+    align-items:flex-start;
+    text-align:left;
+}
+
+.team-right span,
+.team-left span{
+    display:block;
+    margin-bottom:6px;
+    font-size:22px;
+}
+
+.team-flag{
+    width:35px;
+    height:auto;
+}
+
+.team-name{
+    font-size:22px;
+    font-weight:bold;
+    margin-bottom:8px;
+}
+
+.team-flag{
+    width:40px;
+    height:28px;
+    object-fit:cover;
+}
+
+.team-right,
+.team-left{
+    position:relative;
+    z-index:10;
+}
+
+.team-name{
+    opacity: 0.8;
+}
+.team-flag{
+    opacity: 0.85;
+}
+
+.team-right{
+    align-items: flex-end !important;
+    text-align: right !important;
+    margin-right: -40px;
+}
+
+.team-left{
+    align-items: flex-start !important;
+    text-align: left !important;
+    margin-left: -40px;
+}
+
+.team-name{
+    opacity: 0.65 !important;
+}
+
+.team-flag{
+    opacity: 0.7 !important;
 }

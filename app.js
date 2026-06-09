@@ -161,16 +161,14 @@ style="
 --away-flag:url('https://flagcdn.com/w320/${flags[match.away_team]}.png');
 ">
 
+<div class="match-row">
 
+        <div class="team-right">
+    <span class="team-name">${match.home_team}</span>
 
-        <div class="match-row">
-
-    <div class="team-right">
-        <img class="team-flag"
-        src="https://flagcdn.com/32x24/${flags[match.home_team]}.png">
-
-        <span>${match.home_team}</span>
-    </div>
+    <img class="team-flag"
+    src="https://flagcdn.com/w40/${flags[match.home_team]}.png">
+</div>
 
     <div class="prediction-center">
 
@@ -188,12 +186,12 @@ placeholder="-">
 
     <div class="team-left">
 
-        <span>${match.away_team}</span>
+    <span class="team-name">${match.away_team}</span>
 
-        <img class="team-flag"
-        src="https://flagcdn.com/32x24/${flags[match.away_team]}.png">
+    <img class="team-flag"
+    src="https://flagcdn.com/w40/${flags[match.away_team]}.png">
 
-    </div>
+</div>
 
 </div>
 
