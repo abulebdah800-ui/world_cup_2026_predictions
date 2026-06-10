@@ -204,6 +204,11 @@ placeholder="-">
     🕒 ${match.match_date}
 </div>
 
+<button class="info-btn"
+onclick="window.location.href='match-info.html?home=${encodeURIComponent(match.home_team)}&away=${encodeURIComponent(match.away_team)}'">
+📊 معلومات المباراة
+</button>
+
 </div>
 `;
 
