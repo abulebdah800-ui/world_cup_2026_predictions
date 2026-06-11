@@ -671,8 +671,8 @@ transition:all 0.3s ease;
     margin:10px auto 0;
     padding:8px 14px;
 
-    background:linear-gradient(135deg,#1e88e5,#1565c0);
-    color:white;
+    background: linear-gradient(135deg, #0d1b2a, #c0c0c0);
+color: white;
 
     border:none;
     border-radius:10px;
