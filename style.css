@@ -730,11 +730,3 @@ color: white;
     font-weight:bold;
 }
 
-@media (max-width: 768px) {
-
-    .match::before,
-    .match::after {
-        background-size: 85%;
-    }
-
-}
