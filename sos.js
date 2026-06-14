@@ -1,6 +1,6 @@
 const password = prompt("أدخل كلمة مرور SOS");
 
-if (password !== "sos2026") {
+if (password !== "s2026") {
 
     document.body.innerHTML =
         "<h1 style='text-align:center'>🚫 غير مصرح بالدخول</h1>";
