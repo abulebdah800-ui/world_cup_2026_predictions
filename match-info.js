@@ -8,7 +8,7 @@ document.getElementById("matchTitle").innerHTML =
 
 const matchAnalysis = {
 
-"المانيا|كوراساو":`
+"كوراساو|المانيا":`
 📊 تحليل المباراة
 
 🇩🇪 ألمانيا
